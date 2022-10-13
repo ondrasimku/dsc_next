@@ -1,0 +1,83 @@
+@import "./variables.less";
+
+@breakpoint: ~"only screen and (max-width: 570px)";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 35px 350px;
+  border-top: 1px solid #E5E5E5;
+
+  @media @screenBig {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+
+  @media @screenSmall {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  @media @tablet {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media @breakpoint {
+    gap: 0.5rem;
+  }
+}
+
+.footer__line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media @breakpoint {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+.footer__line__reverse {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media @breakpoint {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+.footer__line__left {
+  color: #000000;
+  font-size: 24px;
+}
+
+.footer__line__right {
+  color: #000000;
+  font-size: 24px;
+
+  &__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    a {
+        color: black;
+    }
+  }
+}
+
+.footer__line__right a {
+  text-decoration: none;
+  color: #000000;
+}

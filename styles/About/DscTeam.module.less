@@ -1,0 +1,89 @@
+@import "../variables.less";
+
+.dsc_team {
+    background-image: url("/images/About/bg_image.png");
+    background-position: center;
+    background-size: cover;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 29px;
+    padding-bottom: 51px;
+
+    @media @screenBig {
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+
+    @media @screenSmall {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    @media @tablet {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.cards__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 34px;
+    border-radius: 3px;
+    height: 350px;
+    width: 285px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cards__card__imageDiv {
+    height: 120px;
+    width: 120px;
+}
+
+.cards__card__imageDiv img {
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.cards__card h2 {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.cards__card p {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.cards__card>a {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #333333;
+    text-decoration: underline;
+}
+
+.cards__card__links {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.cards__card__links a {
+    text-decoration: none;
+    color: #333333;
+}
